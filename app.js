@@ -8,7 +8,7 @@ const mainRoutes = require('./routes/shop')
 
 app.use(bodyParser.urlencoded({extended: false}))
 
-app.use(adminRoutes)
+app.use('/admin', adminRoutes)
 app.use(mainRoutes)
 
 // use works for all HTTP methods express
